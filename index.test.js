@@ -19,13 +19,13 @@ test('should get default value', function () {
 test('should get deep value', function () {
 	var data = {x: {b: {c: 1}}, y: 2};
 	var prop = props(data);
-	expect(prop().deep(['x', 'b', 'c'])).toBe(1);
+	expect(prop(['x', 'b', 'c'])).toBe(1);
 });
 
 test('should get default value, deep, all', function () {
 	var data = {x: {b: {c: 1}}, y: 2};
 	var prop = props(data);
-	expect(prop().deep(['x', 'b', 'c', 'e'], 'empty')).toBe('empty');
+	expect(prop(['x', 'b', 'c', 'e'], 'empty')).toBe('empty');
 });
 
 test('should get object by keys', function () {
