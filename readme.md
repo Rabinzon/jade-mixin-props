@@ -41,7 +41,7 @@ var data = {x: {y: {z: 'z value'} } };
 
 var prop = props(data);
 
-prop.deep(['x', 'y', 'z']) // 'z value'
+prop('['x', 'y', 'z']') // 'z value'
 ```
 
 or multiple values: 
