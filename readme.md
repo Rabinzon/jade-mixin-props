@@ -1,5 +1,5 @@
 ## jade-mixin-props
-Helper functions for simplify using jade mixin arguments.
+Helper function for simplify usage of jade mixin arguments.
 
 ```
 $ npm i --save jade-mixin-props
@@ -35,7 +35,7 @@ minix block(data)
 					li=item
 ```
 
-also you can peek deep value:
+also you can get value by path:
 ```
 var data = {x: {y: {z: 'z value'} } };
 
