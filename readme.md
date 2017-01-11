@@ -1,15 +1,17 @@
-## jade-mixin-props
+## jade-mixin-props 
 Helper function for simplify usage of jade mixin arguments.
 
 ```
 $ npm i --save jade-mixin-props
 ```
 
-examples:
+### Examples:
+
+Typical mixin
 ```
 minix block(data)
 	- data = data || {}
-	- data.title = data.title || 'defualt'
+	- data.title = data.title || 'default'
 	- data.size = data.size || 0
 	- data.mod = data.mod || false
 	- data.list = data.list || []
@@ -22,13 +24,13 @@ minix block(data)
 				li=item
 ```
 
-same with helper:
+Same with helper:
 
 ```
 minix block(data)
 	- var prop = props(data)
 	.block(class=prop('mod'))
-		h1!=prop('title', 'defualt')
+		h1!=prop('title', 'default')
 			span!=prop('size', 0)
 			ul
 				each item in prop('list', [])
