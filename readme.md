@@ -1,6 +1,5 @@
 ## jade-mixin-props 
-[![Build Status](https://travis-ci.org/Rabinzon/jade-mixin-props.svg?branch=master)](https://travis-ci.org/Rabinzon/jade-mixin-props)
-
+[![Build Status](https://travis-ci.org/Rabinzon/jade-mixin-props.svg?branch=master)](https://travis-ci.org/Rabinzon/jade-mixin-props)  [![NPM](https://nodei.co/npm/jade-mixin-props.png)](https://nodei.co/npm/jade-mixin-props/)
 Helper function for simplify usage of jade mixin arguments.
 
 ```
